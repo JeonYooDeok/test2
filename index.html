@@ -11,23 +11,7 @@
 <body>
     <button class="connetMetamask">Enable Ethereum</button>
     <h2>Account: <span class="myAccount"></span></h2>
-    <script type="text/javascript">
-        const ethereumButton = document.querySelector('.connetMetamask');
-        const myAccount = document.querySelector('.myAccount');
-
-        ethereumButton.addEventListener('click', () => {
-            getAccount();
-        });
-
-        async function getAccount() {
-            const accounts = await ethereum.request({
-                method: 'eth_requestAccounts'
-            });
-            const account = accounts[0];
-            myAccount.innerHTML = account;
-        }
-
-    </script>
+    <script type="text/javascript" src="example.js"></script>
 </body>
 
 </html>
