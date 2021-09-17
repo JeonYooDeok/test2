@@ -1,3 +1,7 @@
+if (typeof window.ethereum !== 'undefined') {
+    console.log('MetaMask is installed!');
+}
+
 const ethereumButton = document.querySelector('.connetMetamask');
 const myAccount = document.querySelector('.myAccount');
 
