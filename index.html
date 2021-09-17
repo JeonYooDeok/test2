@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>-->
+</head>
+
+<body>
+    <button class="enableEthereumButton">Enable Ethereum</button>
+    <script type="text/javascript">
+        const ethereumButton = document.querySelector(".enableEthereumButton");
+
+        ethereumButton.addEventListener("click", () => {
+            //Will Start the metamask extension
+            ethereum.enable();
+        });
+
+    </script>
+</body>
+
+</html>
